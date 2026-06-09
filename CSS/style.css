@@ -218,3 +218,304 @@ footer p{
 
     color:var(--primary-color);
 }
+/* =========================
+   HERO AVANCE
+========================= */
+
+.hero{
+
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+    height:400px;
+
+    background:rgba(13,110,253,0.1);
+
+    border-radius:50%;
+
+    top:-120px;
+    right:-120px;
+}
+
+.hero .badge{
+
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:0.9rem;
+}
+
+.hero img{
+
+    border-radius:30px;
+    transition:var(--transition);
+}
+
+.hero img:hover{
+
+    transform:scale(1.03);
+}
+
+/* =========================
+   BENTO GRID
+========================= */
+
+.bento-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.bento-card{
+
+    background:var(--white-color);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    transition:var(--transition);
+
+    height:100%;
+}
+
+.bento-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-card{
+
+    background:var(--white-color);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+    height:100%;
+}
+
+.services-card:hover{
+
+    transform:translateY(-12px);
+
+    background:var(--primary-color);
+
+    color:var(--white-color);
+}
+
+.services-card:hover h3{
+
+    color:var(--white-color);
+}
+
+.services-card i{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+    color:var(--primary-color);
+}
+
+.services-card:hover i{
+
+    color:var(--white-color);
+}
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories{
+
+    background:var(--light-color);
+}
+
+.category-card{
+
+    background:var(--white-color);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+    height:100%;
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+}
+
+.category-card i{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+    color:var(--primary-color);
+}
+
+/* =========================
+   STATISTIQUES
+========================= */
+
+.stats{
+
+    background:linear-gradient(
+        135deg,
+        #0d6efd,
+        #0b5ed7
+    );
+
+    color:white;
+}
+
+.stats h2{
+
+    color:white;
+
+    font-size:3rem;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.team-card{
+
+    background:var(--white-color);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+    height:100%;
+}
+
+.team-card:hover{
+
+    transform:translateY(-10px);
+}
+
+.team-card img{
+
+    width:120px;
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    margin-bottom:20px;
+}
+
+/* =========================
+   FORMULAIRE CONTACT
+========================= */
+
+form{
+
+    background:var(--white-color);
+
+    border-radius:25px;
+}
+
+.form-control,
+.form-select{
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    box-shadow:none;
+
+    border-color:var(--primary-color);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    padding:60px 0;
+}
+
+footer a{
+
+    color:white;
+}
+
+footer a:hover{
+
+    color:var(--primary-color);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeInUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero,
+.card,
+.category-card,
+.team-card{
+
+    animation:fadeInUp 1s ease;
+}
