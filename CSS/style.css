@@ -1,0 +1,220 @@
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+
+    --primary-color:#0d6efd;
+    --secondary-color:#6c757d;
+    --dark-color:#111827;
+    --light-color:#f8f9fa;
+    --white-color:#ffffff;
+
+    --title-font:"Poppins", sans-serif;
+    --body-font:"Inter", sans-serif;
+
+    --transition:0.3s ease;
+}
+
+/* =========================
+   RESET
+========================= */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family:var(--body-font);
+    background-color:var(--white-color);
+    color:#333;
+    line-height:1.7;
+}
+
+/* =========================
+   TITRES
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--title-font);
+    font-weight:700;
+    color:var(--dark-color);
+}
+
+/* =========================
+   LIENS
+========================= */
+
+a{
+
+    text-decoration:none;
+    transition:var(--transition);
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img{
+
+    max-width:100%;
+    display:block;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+    padding:18px 0;
+    background-color:var(--white-color);
+}
+
+.navbar-brand{
+
+    font-size:1.5rem;
+    color:var(--dark-color);
+}
+
+.nav-link{
+
+    font-weight:500;
+    margin-left:15px;
+    color:var(--dark-color);
+}
+
+.nav-link:hover{
+
+    color:var(--primary-color);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background-color:var(--light-color);
+    padding:120px 0;
+}
+
+.hero h1{
+
+    font-size:3.5rem;
+    line-height:1.2;
+}
+
+.hero p{
+
+    font-size:1.1rem;
+    color:var(--secondary-color);
+}
+
+/* =========================
+   BOUTONS
+========================= */
+
+.btn{
+
+    padding:12px 28px;
+    border-radius:10px;
+    transition:var(--transition);
+}
+
+.btn-primary{
+
+    background-color:var(--primary-color);
+    border:none;
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+}
+
+.btn-outline-dark:hover{
+
+    transform:translateY(-3px);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+
+    border:none;
+    border-radius:20px;
+    transition:var(--transition);
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+
+    padding:100px 0;
+}
+
+/* =========================
+   TITRES SECTION
+========================= */
+
+section h2{
+
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background-color:var(--dark-color);
+    color:var(--white-color);
+}
+
+footer p{
+
+    margin:0;
+}
+
+/* =========================
+   ICONES
+========================= */
+
+.bi{
+
+    transition:var(--transition);
+}
+
+.bi:hover{
+
+    color:var(--primary-color);
+}
