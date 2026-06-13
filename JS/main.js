@@ -56,3 +56,22 @@ topBtn.addEventListener("click", function(){
     });
 
 });
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", function(){
+
+    sections.forEach(function(section){
+
+        const position = section.getBoundingClientRect().top;
+
+        const screenPosition = window.innerHeight - 100;
+
+        if(position < screenPosition){
+
+            section.classList.add("show");
+
+        }
+
+    });
+
+});
