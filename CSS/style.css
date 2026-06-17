@@ -226,6 +226,7 @@ footer p{
 
     position:relative;
     overflow:hidden;
+
 }
 
 .hero::before{
@@ -530,7 +531,18 @@ footer a:hover{
     background-color:#1e1e1e;
     color:white;
 }
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: white;
+}
 
+.dark-mode .navbar {
+    background-color: #222;
+}
+
+.dark-mode .btn {
+    color: white;
+}
 /* Navbar dynamique */
 
 .navbar{
@@ -559,4 +571,12 @@ footer a:hover{
 .fade-section.show{
     opacity:1;
     transform:translateY(0);
+}
+/* =====================
+   RESPONSIVE IMAGES
+===================== */
+
+img {
+    max-width: 100%;
+    height: auto;
 }

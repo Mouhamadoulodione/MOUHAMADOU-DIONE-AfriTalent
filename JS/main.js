@@ -1,6 +1,6 @@
-// DARK MODE
 
-const darkBtn = document.getElementById("darkModeBtn");
+
+const darkBtn = document.getElementById("theme-toggle")
 
 if(localStorage.getItem("theme") === "dark"){
     document.body.classList.add("dark-mode");
@@ -19,7 +19,7 @@ darkBtn.addEventListener("click", function(){
 });
 
 
-// NAVBAR DYNAMIQUE
+
 
 window.addEventListener("scroll", function(){
 
@@ -34,9 +34,9 @@ window.addEventListener("scroll", function(){
 });
 
 
-// RETOUR EN HAUT
 
-const topBtn = document.getElementById("topBtn");
+
+const topBtn = document.getElementById("backToTop")
 
 window.addEventListener("scroll", function(){
 
@@ -75,3 +75,28 @@ window.addEventListener("scroll", function(){
     });
 
 });
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        const message = document.getElementById("message");
+
+        if (message.value.trim().length < 20) {
+
+            alert("Le message doit contenir au moins 20 caractères");
+            return;
+        }
+
+        document
+            .getElementById("successMessage")
+            .classList.remove("d-none");
+
+        contactForm.reset();
+
+    });
+
+}

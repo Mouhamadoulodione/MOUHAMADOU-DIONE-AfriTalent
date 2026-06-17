@@ -107,6 +107,9 @@
                         </li>
 
                     </ul>
+                    <button id="theme-toggle" class="btn btn-outline-primary ms-3">
+                        Mode
+                    </button>
 
                 </div>
 
@@ -144,7 +147,7 @@
 
         <!-- CONTACT -->
 
-        <section class="py-5 fade-section">
+        <section class="py-5 ">
 
             <div class="container">
 
@@ -153,7 +156,7 @@
                     <!-- Formulaire -->
                     <div class="col-lg-7">
 
-                        <form class="shadow p-4 rounded-4 bg-white">
+                        <form id="contactForm" class="shadow p-4 rounded-4 bg-white">
 
                             <div class="mb-3">
 
@@ -163,9 +166,10 @@
 
                                 <input
                                     type="text"
+                                    id="nom"
                                     class="form-control"
                                     placeholder="Entrez votre nom">
-
+                            
                             </div>
 
                             <div class="mb-3">
@@ -176,6 +180,7 @@
 
                                 <input
                                     type="text"
+                                     id="prenom"
                                     class="form-control"
                                     placeholder="Entrez votre prénom">
 
@@ -189,6 +194,7 @@
 
                                 <input
                                     type="email"
+                                    id="email"
                                     class="form-control"
                                     placeholder="example@email.com">
 
@@ -200,7 +206,7 @@
                                     Sujet
                                 </label>
 
-                                <select class="form-select">
+                                <select id="sujet" class="form-select">
 
                                     <option>
                                         Informations générales
@@ -225,6 +231,7 @@
                                 </label>
 
                                 <textarea
+                                    id="message"
                                     class="form-control"
                                     rows="6"
                                     placeholder="Écrivez votre message ici">
@@ -237,6 +244,10 @@
                                 Envoyer le message
 
                             </button>
+
+                            <div id="successMessage" class="alert alert-success mt-3 d-none">
+                                Message envoyé avec succès !
+                            </div>
 
                         </form>
 
