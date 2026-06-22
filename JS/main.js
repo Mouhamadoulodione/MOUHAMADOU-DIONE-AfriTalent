@@ -1,4 +1,4 @@
-
+// DARK MODE
 
 const darkBtn = document.getElementById("theme-toggle")
 
@@ -19,7 +19,7 @@ darkBtn.addEventListener("click", function(){
 });
 
 
-
+// NAVBAR DYNAMIQUE
 
 window.addEventListener("scroll", function(){
 
@@ -34,9 +34,9 @@ window.addEventListener("scroll", function(){
 });
 
 
+// RETOUR EN HAUT
 
-
-const topBtn = document.getElementById("backToTop")
+const topBtn = document.getElementById("btnTop")
 
 window.addEventListener("scroll", function(){
 
@@ -48,14 +48,18 @@ window.addEventListener("scroll", function(){
 
 });
 
-topBtn.addEventListener("click", function(){
+if (topBtn) {
 
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
+    topBtn.addEventListener("click", function(){
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
     });
 
-});
+}
 const sections = document.querySelectorAll(".fade-section");
 
 window.addEventListener("scroll", function(){
