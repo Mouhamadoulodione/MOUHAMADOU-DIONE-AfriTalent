@@ -1,6 +1,4 @@
-/* =========================
-   VARIABLES
-========================= */
+  /* VARIABLES */
 
 :root{
 
@@ -16,9 +14,8 @@
     --transition:0.3s ease;
 }
 
-/* =========================
-   RESET
-========================= */
+ 
+  /* RESET */
 
 *{
 
@@ -39,9 +36,8 @@ body{
     line-height:1.7;
 }
 
-/* =========================
-   TITRES
-========================= */
+ 
+  /* TITRES */
 
 h1,
 h2,
@@ -65,9 +61,8 @@ a{
     transition:var(--transition);
 }
 
-/* =========================
-   IMAGES
-========================= */
+
+  /* IMAGES */
 
 img{
 
@@ -75,9 +70,8 @@ img{
     display:block;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+
+  /* NAVBAR */
 
 .navbar{
 
@@ -128,9 +122,8 @@ img{
     color:var(--secondary-color);
 }
 
-/* =========================
-   BOUTONS
-========================= */
+ 
+  /* BOUTONS*/
 
 .btn{
 
@@ -180,9 +173,8 @@ section{
     padding:100px 0;
 }
 
-/* =========================
-   TITRES SECTION
-========================= */
+
+  /* TITRES SECTION */
 
 section h2{
 
@@ -190,9 +182,8 @@ section h2{
     margin-bottom:20px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+
+  /* FOOTER */
 
 footer{
 
@@ -205,9 +196,8 @@ footer p{
     margin:0;
 }
 
-/* =========================
-   ICONES
-========================= */
+ 
+  /* ICONES */
 
 .bi{
 
@@ -218,9 +208,8 @@ footer p{
 
     color:var(--primary-color);
 }
-/* =========================
-   HERO AVANCE
-========================= */
+ 
+  /* HERO AVANCE */
 
 .hero{
 
@@ -299,9 +288,7 @@ footer p{
     box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
 
-/* =========================
-   SERVICES
-========================= */
+  /* SERVICES */
 
 .services-card{
 
@@ -346,9 +333,7 @@ footer p{
     color:var(--white-color);
 }
 
-/* =========================
-   CATEGORIES
-========================= */
+  /* CATEGORIES */
 
 .categories{
 
@@ -408,9 +393,8 @@ footer p{
     font-size:3rem;
 }
 
-/* =========================
-   TEAM
-========================= */
+
+  /* TEAM */
 
 .team-card{
 
@@ -446,9 +430,8 @@ footer p{
     margin-bottom:20px;
 }
 
-/* =========================
-   FORMULAIRE CONTACT
-========================= */
+
+  /* FORMULAIRE CONTACT*/
 
 form{
 
@@ -475,9 +458,8 @@ form{
     border-color:var(--primary-color);
 }
 
-/* =========================
-   FOOTER
-========================= */
+ 
+  /* FOOTER*/
 
 footer{
 
@@ -494,9 +476,8 @@ footer a:hover{
     color:var(--primary-color);
 }
 
-/* =========================
-   ANIMATIONS
-========================= */
+ 
+  /* ANIMATIONS */
 
 @keyframes fadeInUp{
 
@@ -572,9 +553,8 @@ footer a:hover{
     opacity:1;
     transform:translateY(0);
 }
-/* =====================
-   RESPONSIVE IMAGES
-===================== */
+ 
+  /* RESPONSIVE IMAGES */
 
 img {
     max-width: 100%;

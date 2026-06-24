@@ -104,3 +104,44 @@ if (contactForm) {
     });
 
 }
+
+let btnDev = document.getElementById("btnDev");
+let btnDesign = document.getElementById("btnDesign");
+let btnMarketing = document.getElementById("btnMarketing");
+let btnTous = document.getElementById("btnTous");
+
+let cartes = document.querySelectorAll(".freelancer-card");
+
+btnTous.onclick = function() {
+    location.reload();
+};
+
+btnDev.onclick = function() {
+    cartes.forEach(function(carte) {
+        if (carte.getAttribute("data-category") == "web") {
+            carte.style.display = "block";
+        } else {
+            carte.style.display = "none";
+        }
+    });
+};
+
+btnDesign.onclick = function() {
+    cartes.forEach(function(carte) {
+        if (carte.getAttribute("data-category") == "design") {
+            carte.style.display = "block";
+        } else {
+            carte.style.display = "none";
+        }
+    });
+};
+
+btnMarketing.onclick = function() {
+    cartes.forEach(function(carte) {
+        if (carte.getAttribute("data-category") == "marketing") {
+            carte.style.display = "block";
+        } else {
+            carte.style.display = "none";
+        }
+    });
+};
